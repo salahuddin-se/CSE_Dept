@@ -49,44 +49,44 @@ class ThirdStepsResult extends StatelessWidget {
               ),
 
               Text(
-                "Do you want to next steps ?",
+                "You Have Finished Last Steps.",
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                 textAlign: TextAlign.center,
               ),
               //Text
-              Padding(
-                padding: const EdgeInsets.all(20.0),
-                child: RaisedButton(
-                  onPressed: () {
-                    if (resultScore >= 20) {
-                      //Get.off(SecondSteps());
-
-//                      Navigator.push(context,
-//                          MaterialPageRoute(builder: (context) => SecondSteps()));
-                      //Get.toNamed("/SecondSteps");
-                    }
-
-                    /*
-                        onPressed: () {
-                        Get.toNamed("/second");
-                      },
-                         */
-
-                    else {
-                      Fluttertoast.showToast(
-                          msg: "You are not qualified...",
-                          toastLength: Toast.LENGTH_SHORT,
-                          gravity: ToastGravity.BOTTOM,
-                          timeInSecForIos: 1,
-                          backgroundColor: Colors.teal,
-                          textColor: Colors.white,
-                          fontSize: 25.0
-                      );
-                    }
-                  },
-                  child: Text("Next Level",style: TextStyle(fontSize: 28.0),),
-                ),
-              ),
+//               Padding(
+//                 padding: const EdgeInsets.all(20.0),
+//                 child: RaisedButton(
+//                   onPressed: () {
+//                     if (resultScore >= 20) {
+//                       //Get.off(SecondSteps());
+//
+// //                      Navigator.push(context,
+// //                          MaterialPageRoute(builder: (context) => SecondSteps()));
+//                       //Get.toNamed("/SecondSteps");
+//                     }
+//
+//                     /*
+//                         onPressed: () {
+//                         Get.toNamed("/second");
+//                       },
+//                          */
+//
+//                     else {
+//                       Fluttertoast.showToast(
+//                           msg: "You are not qualified...",
+//                           toastLength: Toast.LENGTH_SHORT,
+//                           gravity: ToastGravity.BOTTOM,
+//                           timeInSecForIos: 1,
+//                           backgroundColor: Colors.teal,
+//                           textColor: Colors.white,
+//                           fontSize: 25.0
+//                       );
+//                     }
+//                   },
+//                   child: Text("Next Level",style: TextStyle(fontSize: 28.0),),
+//                 ),
+//               ),
 
               FlatButton(
                 child: Text(

@@ -12,8 +12,13 @@ class FirstPage_Soft extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor:Colors.cyanAccent[400] ,
-      appBar: AppBar(
-        title: Text("Introduction To Algorithms"),
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(40.0),
+        child: AppBar(
+          backgroundColor: Colors.lightBlue[300],
+          title: Text('Introduction To Algorithms'),
+          centerTitle: false,
+        ),
       ),
       //backgroundColor: Colors.cyanAccent,
       body: Padding(

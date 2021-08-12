@@ -32,10 +32,20 @@ class Abbreviation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.tealAccent[100],
-        title: Text("Abbreviation"),
+      // appBar: AppBar(
+      //   backgroundColor: Colors.tealAccent[100],
+      //   title: Text("Abbreviation"),
+      // ),
+
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(40.0),
+        child: AppBar(
+          backgroundColor: Colors.tealAccent[400],
+          title: Text('Abbreviation'),
+          centerTitle: false,
+        ),
       ),
+
       body:Padding(
         padding: const EdgeInsets.all(10.0),
         child: ListView.separated(itemCount: names.length,separatorBuilder: (context, index) =>
@@ -46,7 +56,7 @@ class Abbreviation extends StatelessWidget {
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
                   //colors: [  Colors.indigoAccent,Colors.lightGreenAccent, Colors.cyanAccent,],
-                  colors: [Colors.blue,Colors.yellow, Colors.tealAccent ],
+                  colors: [Colors.teal,Colors.tealAccent ,Colors.cyan],
                   //colors: [Colors.redAccent, Colors.cyan],
                 )
             ),
@@ -56,7 +66,8 @@ class Abbreviation extends StatelessWidget {
                 onTap: (){
                   Fluttertoast.showToast(
                       msg: names[index].answer,
-                      backgroundColor: Colors.lightBlueAccent,
+                      //backgroundColor: Colors.lightBlueAccent,
+                      backgroundColor: Colors.lightBlue,
                       fontSize: 23,
                       gravity: ToastGravity.TOP,
                       textColor: Colors.white

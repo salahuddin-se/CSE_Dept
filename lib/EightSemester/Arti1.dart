@@ -20,10 +20,20 @@ class MainPage_Arti extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.teal[400],
-        title: Text("Artificial Intelligence",style: TextStyle(color: Colors.white),),
+      // appBar: AppBar(
+      //   backgroundColor: Colors.teal[400],
+      //   title: Text("Artificial Intelligence",style: TextStyle(color: Colors.white),),
+      // ),
+
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(40.0),
+        child: AppBar(
+          backgroundColor: Colors.teal[400],
+          title: Text('Artificial Intelligence'),
+          centerTitle: false,
+        ),
       ),
+
       body:Padding(
         padding: const EdgeInsets.all(10.0),
         child: ListView.separated(itemCount: names.length,separatorBuilder: (context, index) =>
@@ -32,8 +42,7 @@ class MainPage_Arti extends StatelessWidget {
             decoration: BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [Colors.tealAccent,Colors.lightGreenAccent,],
+                  end: Alignment.bottomCenter, colors: [Colors.teal,Colors.white,Colors.cyanAccent],
                   //colors: [  Colors.indigoAccent,Colors.lightGreenAccent, Colors.cyanAccent,],
                   //colors: [ Colors.lightBlue[100],Colors.blueAccent[100],Colors.purple[50],  ],
                   //colors: [Colors.redAccent, Colors.cyan],

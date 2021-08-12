@@ -22,9 +22,17 @@ class MainPage_Micro extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.teal,
-        title: Text("Microprocessor",style: TextStyle(color: Colors.white),),
+      // appBar: AppBar(
+      //   backgroundColor: Colors.teal,
+      //   title: Text("Microprocessor",style: TextStyle(color: Colors.white),),
+      // ),
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(40.0),
+        child: AppBar(
+          backgroundColor: Colors.cyan,
+          title: Text('Microprocessor'),
+          centerTitle: false,
+        ),
       ),
       body:Padding(
         padding: const EdgeInsets.all(10.0),

@@ -13,11 +13,22 @@ class FirstPage_Archi extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:Colors.lightBlueAccent[700] ,
-      appBar: AppBar(
-        backgroundColor: Colors.blue[800],
-        title: Text("Computer Architechture"),
+      //backgroundColor:Colors.lightBlueAccent[700] ,
+      backgroundColor:Colors.black ,
+      // appBar: AppBar(
+      //   backgroundColor: Colors.blue[800],
+      //   title: Text("Computer Architechture"),
+      // ),
+
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(40.0),
+        child: AppBar(
+          backgroundColor: Colors.teal[400],
+          title: Text('Computer Architechture'),
+          centerTitle: false,
+        ),
       ),
+
       //backgroundColor: Colors.cyanAccent,
       body: Padding(
         padding: const EdgeInsets.all(10.0),

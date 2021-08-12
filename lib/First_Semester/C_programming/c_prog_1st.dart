@@ -42,10 +42,20 @@ class Sub1 extends StatelessWidget {
         },
         ),
       ),
-      appBar: AppBar(
-        backgroundColor: Colors.teal[400],
-        title: Text("C Programming"),
+      // appBar: AppBar(
+      //   backgroundColor: Colors.teal[400],
+      //   title: Text("C Programming"),
+      // ),
+      appBar: PreferredSize(
+
+        preferredSize: Size.fromHeight(40.0),
+        child: AppBar(
+          backgroundColor: Colors.cyan[700],
+          title: Text('C Programming'),
+          centerTitle: false,
+        ),
       ),
+
     );
   }
 }

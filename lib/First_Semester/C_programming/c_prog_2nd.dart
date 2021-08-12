@@ -10,9 +10,14 @@ class Second extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.teal[200],
-      appBar: AppBar(
-        backgroundColor: Colors.tealAccent,
-        title: Text("C Programming"),
+      appBar: PreferredSize(
+
+        preferredSize: Size.fromHeight(40.0),
+        child: AppBar(
+          backgroundColor: Colors.cyan[700],
+          title: Text('C Programming'),
+          centerTitle: false,
+        ),
       ),
       //backgroundColor: Colors.cyanAccent,
       body: Padding(

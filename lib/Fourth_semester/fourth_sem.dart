@@ -17,7 +17,7 @@ class Fourth_Sem extends StatelessWidget {
     return Scaffold(
       backgroundColor:Colors.cyan[50] ,
       appBar: AppBar(
-        title: Text("Second Semester's Course",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold),),
+        title: Text("Fourth Semester's Course",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold),),
         backgroundColor: Colors.blue[200],
       ),
       body: Padding(
@@ -31,21 +31,32 @@ class Fourth_Sem extends StatelessWidget {
           crossAxisCount: 2,
           children: <Widget>[
 
-            Column(
-              children: [
-                Card(
-                  color: Colors.white,
-                  child: InkWell(
-                    onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => MainPage_AdAlg()));
-                    },
-                    child:Image.asset("images/adalg.jpg",fit: BoxFit.cover),
-                  ),
-                ),
-                Text("Advance Algorithms")
-              ],
+            Card(
+              color: Colors.white,
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => MainPage_AdAlg()));
+                },
+                child:Image.asset("images/nnalgo.png",fit: BoxFit.cover),
+              ),
             ),
+
+            // Column(
+            //   children: [
+            //     Card(
+            //       color: Colors.white,
+            //       child: InkWell(
+            //         onTap: () {
+            //           Navigator.push(context,
+            //               MaterialPageRoute(builder: (context) => MainPage_AdAlg()));
+            //         },
+            //         child:Image.asset("images/adalg.jpg",fit: BoxFit.cover),
+            //       ),
+            //     ),
+            //     Text("Advance Algorithms")
+            //   ],
+            // ),
 
 
             /*Card(

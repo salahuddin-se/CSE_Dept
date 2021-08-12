@@ -9,9 +9,17 @@ class Second3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.cyan,
-          title: Text("Java Programming"),
+        // appBar: AppBar(
+        //   backgroundColor: Colors.cyan,
+        //   title: Text("Java Programming"),
+        // ),
+        appBar: PreferredSize(
+          preferredSize: Size.fromHeight(40.0),
+          child: AppBar(
+            backgroundColor: Colors.cyan,
+            title: Text('Java Programming'),
+            centerTitle: false,
+          ),
         ),
         body:Padding(
           padding: const EdgeInsets.all(10.0),

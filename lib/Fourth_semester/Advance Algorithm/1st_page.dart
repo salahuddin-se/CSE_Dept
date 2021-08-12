@@ -16,8 +16,16 @@ class MainPage_AdAlg extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Advance Algorithm"),
+      // appBar: AppBar(
+      //   title: Text("Advance Algorithm"),
+      // ),
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(40.0),
+        child: AppBar(
+          backgroundColor: Colors.cyan[200],
+          title: Text('Advance Algorithm'),
+          centerTitle: false,
+        ),
       ),
       body:Padding(
         padding: const EdgeInsets.all(10.0),

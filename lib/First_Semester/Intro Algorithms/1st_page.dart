@@ -19,9 +19,19 @@ class MainPage_IntroAlg extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Introduction To Algorithms"),
+
+      // appBar: AppBar(
+      //   title: Text("Introduction To Algorithms"),
+      // ),
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(40.0),
+        child: AppBar(
+          backgroundColor: Colors.lightBlue[300],
+          title: Text('Introduction To Algorithms'),
+          centerTitle: false,
+        ),
       ),
+
       body:Padding(
         padding: const EdgeInsets.all(10.0),
         child: ListView.separated(itemCount: names.length,separatorBuilder: (context, index) =>

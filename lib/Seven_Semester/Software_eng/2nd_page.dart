@@ -11,10 +11,18 @@ class FirstPage_Soft extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:Colors.teal[100] ,
-      appBar: AppBar(
-        backgroundColor: Colors.tealAccent[700],
-        title: Text("Software engineering"),
+      backgroundColor:Colors.teal[200] ,
+      // appBar: AppBar(
+      //   backgroundColor: Colors.tealAccent[700],
+      //   title: Text("Software engineering"),
+      // ),
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(40.0),
+        child: AppBar(
+          backgroundColor: Colors.tealAccent[700],
+          title: Text('Software Eng.'),
+          centerTitle: false,
+        ),
       ),
       //backgroundColor: Colors.cyanAccent,
       body: Padding(

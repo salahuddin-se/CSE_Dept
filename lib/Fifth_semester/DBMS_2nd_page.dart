@@ -17,9 +17,17 @@ class FirstPage_DBMS extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor:Colors.lightBlueAccent[700] ,
-      appBar: AppBar(
-        backgroundColor: Colors.blue[800],
-        title: Text("Database Management System"),
+      // appBar: AppBar(
+      //   backgroundColor: Colors.blue[800],
+      //   title: Text("Database Management System"),
+      // ),
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(40.0),
+        child: AppBar(
+          backgroundColor: Colors.blue[800],
+          title: Text('Database Management System'),
+          centerTitle: false,
+        ),
       ),
       //backgroundColor: Colors.cyanAccent,
       body: Padding(

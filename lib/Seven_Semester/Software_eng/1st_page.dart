@@ -24,10 +24,20 @@ class MainPage_Soft extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.blue,
-        title: Text("Software Eng.",style: TextStyle(color: Colors.white),),
+      // appBar: AppBar(
+      //   backgroundColor: Colors.blue,
+      //   title: Text("Software Eng.",style: TextStyle(color: Colors.white),),
+      // ),
+
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(40.0),
+        child: AppBar(
+          backgroundColor: Colors.blue,
+          title: Text('Software Eng.'),
+          centerTitle: false,
+        ),
       ),
+
       body:Padding(
         padding: const EdgeInsets.all(10.0),
         child: ListView.separated(itemCount: names.length,separatorBuilder: (context, index) =>
@@ -38,7 +48,7 @@ class MainPage_Soft extends StatelessWidget {
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
                   //colors: [  Colors.indigoAccent,Colors.lightGreenAccent, Colors.cyanAccent,],
-                  colors: [ Colors.teal[100],Colors.lightBlueAccent[700],Colors.blue[50]  ],
+                  colors: [ Colors.teal[100],Colors.blue[200],Colors.blue[50]  ],
                   //colors: [Colors.redAccent, Colors.cyan],
                 )
             ),

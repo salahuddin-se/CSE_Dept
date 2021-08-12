@@ -10,15 +10,15 @@ class ThirdStepsResult extends StatelessWidget {
   //Remark Logic
   String get resultPhrase {
     String resultText;
-    if (resultScore >= 41) {
+    if (resultScore >= 20) {
       resultText = 'You are selected for next steps !';
       print(resultScore);
-    } else if (resultScore >= 31) {
-      resultText = 'Pretty likeable!';
+    } else if (resultScore >= 30) {
+      resultText = 'Better Result';
       print(resultScore);
-    } else if (resultScore >= 21) {
-      resultText = 'You need to work more!';
-    } else if (resultScore >= 1) {
+    } else if (resultScore >=40) {
+      resultText = 'Excellent Result';
+    } else if (resultScore <20) {
       resultText = 'You need to work hard!';
     } else {
       resultText = 'This is a poor score!';

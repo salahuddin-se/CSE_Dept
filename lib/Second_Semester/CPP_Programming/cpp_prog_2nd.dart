@@ -9,10 +9,14 @@ class CpSecond extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:Colors.blueAccent[400] ,
-      appBar: AppBar(
-        backgroundColor:Colors.blueAccent[100] ,
-        title: Text("C++ Programming"),
+      backgroundColor:Colors.cyan[600] ,
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(40.0),
+        child: AppBar(
+          backgroundColor: Colors.cyan[200],
+          title: Text('C++ Programming'),
+          centerTitle: false,
+        ),
       ),
       //backgroundColor: Colors.cyanAccent,
       body: Padding(

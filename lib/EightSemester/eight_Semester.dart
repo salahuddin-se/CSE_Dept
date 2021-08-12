@@ -21,7 +21,7 @@ class Eight_Semester extends StatelessWidget {
     return Scaffold(
       backgroundColor:Colors.cyan[50] ,
       appBar: AppBar(
-        title: Text("Seven Semester's Course",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold),),
+        title: Text("Eight Semester's Course",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold),),
         backgroundColor: Colors.lightBlueAccent[100],
       ),
       body: Padding(
@@ -53,7 +53,8 @@ class Eight_Semester extends StatelessWidget {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => MainPage_DM()));
                 },
-                child:Image.asset("images/dm.png",fit: BoxFit.cover),
+                //child:Image.asset("images/dm.png",fit: BoxFit.cover),
+                child:Image.asset("images/ndm.png",fit: BoxFit.cover),
               ),
             ),
             //

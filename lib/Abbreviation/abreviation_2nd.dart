@@ -419,6 +419,53 @@ List<About5> names = [
       question: "OSI",
       answer: "Open System Interconnection"
   ),
+
+
+
+
+  About5( question: "ODBC", answer: "Open Database Connectivity" ),
+  About5( question: "ODI", answer: "Open Data-Link Interface" ),
+  About5( question: "ODP ", answer: "Over Drive Processor" ),
+  About5( question: "ODPR", answer: " Over Drive Processor Replacement" ),
+  About5( question: "OEM", answer: " original equipment manufacturer" ),
+  About5( question: "OHCI ", answer: "Open Host Controller Interface" ),
+  About5( question: "OID", answer: " object identifier" ),
+  About5( question: "OIN ", answer: " Open Invention Network" ),
+  About5( question: "OLAP", answer: " online analytical processing" ),
+  About5( question: "OLE", answer: " OLE (Object Linking and Embedding or Online English" ),
+  About5( question: "P2P", answer: " Peer-To-Peer" ),
+  About5( question: "PAN ", answer: " Personal Area Network" ),
+  About5( question: "PAP", answer: " Password Authentication Protocol" ),
+  About5( question: "PATA", answer: " Parallel ATA" ),
+  About5( question: "PC ", answer: " Personal Computer" ),
+
+
+  About5( question: "PCB", answer: " Printed Circuit Board" ),
+  About5( question: "PC DOS", answer: " Personal Computer Disk Operating System." ),
+  About5( question: "PCI ", answer: " Peripheral Component Interconnect" ),
+
+
+  About5( question: "PCL", answer: " Printer Command Language" ),
+  About5( question: "PGA", answer: " Pin Grid Array" ),
+  About5( question: "Q&A  ", answer: " questions and answers" ),
+
+
+  About5( question: "QA", answer: " quality assurance" ),
+
+
+
+
+
+  About5(
+      question: "ODBC ",
+      answer: "Open Database Connectivity"
+  ),
+
+
+
+
+
+
   About5(
       question: "OSS",
       answer: "Open Source Software"

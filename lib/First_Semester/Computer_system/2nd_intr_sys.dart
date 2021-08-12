@@ -10,9 +10,18 @@ class CpSecond extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor:Colors.cyanAccent[400] ,
-      appBar: AppBar(
-        backgroundColor: Colors.lightBlue,
-        title: Text("Introduction to computer system"),
+      // appBar: AppBar(
+      //   backgroundColor: Colors.lightBlue,
+      //   title: Text("Introduction to computer system"),
+      // ),
+
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(40.0),
+        child: AppBar(
+          backgroundColor: Colors.lightBlue[400],
+          title: Text('Introduction to computer system'),
+          centerTitle: false,
+        ),
       ),
       //backgroundColor: Colors.cyanAccent,
       body: Padding(

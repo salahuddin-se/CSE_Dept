@@ -8,8 +8,13 @@ class Second4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text("VIVA preparation"),
+        appBar: PreferredSize(
+          preferredSize: Size.fromHeight(40.0),
+          child: AppBar(
+            backgroundColor: Colors.cyan,
+            title: Text('VIVA preparation'),
+            centerTitle: false,
+          ),
         ),
         body:Padding(
           padding:  EdgeInsets.all(10.0),

@@ -21,124 +21,259 @@ class _MyAppState extends State<ThirdStep> {
   final _questions = const  [
 
     {
-      'questionText': ' Q1. Which of the following is a run time entity?',
+      'questionText': ' Q51. Which header file is essential for using strcmp() function? ',
       'answers': [
-        {'text': 'Program', 'score': -0.5},
-        {'text': 'Object', 'score': -0.5},
-        {'text':'Program and Object', 'score': 2.0},
-        {'text': 'None of these', 'score': -0.5},
-
-      ],
-    },
-
-
-    {
-      'questionText': '  Q 2. Which of the following is a real time entity? ',
-      'answers': [
-        {'text': 'Class', 'score': -0.5},
-        {'text': 'Object', 'score': 2.0},
-        {'text': 'Method', 'score': -0.5},
-        {'text': 'None ', 'score': -0.5},
+        {'text': ' string.h', 'score': 2.0},
+        {'text': ' strings.h', 'score': -0.5},
+        {'text': ' text.h', 'score': -0.5},
+        {'text': ' strcmp.h', 'score': -0.5},
 
       ],
     },
     {
-      'questionText': ' Q 3. Which of the following makes inheritance compulsory ? ',
+      'questionText': ' Q52. malloc() function used in dynamic allocation is available in which header file? ',
       'answers': [
-        {'text': 'Final', 'score': -0.5},
-        {'text': 'Abstract', 'score': 2.0},
-        {'text': 'Protected', 'score': -0.5},
-        {'text': 'None ', 'score': -0.5},
+        {'text': '  stdio.h ', 'score': -0.5},
+        {'text': '  stdlib.h ', 'score': 2.0},
+        {'text': '  conio.h ', 'score': -0.5},
+        {'text': '  mem.h ', 'score': -0.5},
+
+      ],
+    },
+    {
+      'questionText': ' Q53. File manipulation functions in C are available in which header file? ',
+      'answers': [
+        {'text': '  streams.h ', 'score': -0.5},
+        {'text': '  stdio.h ', 'score': -0.5},
+        {'text': '  stdlib.h ', 'score': -0.5},
+        {'text': '  files.h ', 'score': 2.0},
+
+      ],
+    },
+    {
+      'questionText': ' Q54. C supports how many basic looping constructs ',
+      'answers': [
+        {'text': '  2 ', 'score': -0.5},
+        {'text': '  3 ', 'score': 2.0},
+        {'text': '  4 ', 'score': -0.5},
+        {'text': '  6 ', 'score': -0.5},
+
+      ],
+    },
+    {
+      'questionText': ' Q55. What should be the expression return value for a do-while to terminate ',
+      'answers': [
+        {'text': '  1 ', 'score': -0.5},
+        {'text': '  0 ', 'score': 2.0},
+        {'text': '  -1 ', 'score': -0.5},
+        {'text': '  NULL ', 'score': -0.5},
+
+      ],
+    },
+    {
+      'questionText': ' Q56. Which among the following is an unconditional control structure ',
+      'answers': [
+        {'text': '  do-while ', 'score': -0.5},
+        {'text': '  if-else ', 'score': -0.5},
+        {'text': '  goto ', 'score': 2.0},
+        {'text': '  for ', 'score': -0.5},
+
+      ],
+    },
+    {
+      'questionText': ' Q57. Continue statement is used ',
+      'answers': [
+        {'text': '  to go to the next iteration in a loop ', 'score': 2.0},
+        {'text': '  come out of a loop ', 'score': -0.5},
+        {'text': '  exit and return to the main function ', 'score': -0.5},
+        {'text': '  restarts iterations from the beginning of the loop ', 'score': -0.5},
+
+      ],
+    },
+    {
+      'questionText': ' Q58. Which operator in C is called a ternary operator ',
+      'answers': [
+        {'text': '  if..then ', 'score': -0.5},
+        {'text': '  ++ ', 'score': -0.5},
+        {'text': '  ?: ', 'score': 2.0},
+        {'text': '  () ', 'score': -0.5},
+
+      ],
+    },
+    {
+      'questionText': ' Q59. The meaning of conversion character for data input is ',
+      'answers': [
+        {'text': '  Data item is a long integer ', 'score': -0.5},
+        {'text': '  Data item is an unsigned decimal integer ', 'score': -0.5},
+        {'text': '  Data item is a short integer ', 'score': 2.0},
+        {'text': '  None of the above ', 'score': -0.5},
+
+      ],
+    },
+    {
+      'questionText': ' Q60. The conversion characters for data input means that the data item is ',
+      'answers': [
+        {'text': '  An unsigned decimal integer ', 'score': -0.5},
+        {'text': '  A short integer ', 'score': 2.0},
+        {'text': '  A hexadecimal integer ', 'score': -0.5},
+        {'text': '  A string followed by white space ', 'score': -0.5},
+
+      ],
+    },
+    {
+      'questionText': ' Q61. An expression contains relational, assign. ment and arithmetic operators. If Parenthesis are not present, the order will be ',
+      'answers': [
+        {'text': '  Assignment, arithmetic, relational ', 'score': -0.5},
+        {'text': '  Relational, arithmetic, assignment ', 'score': -0.5},
+        {'text': '  Assignment, relational, arithmetic ', 'score': -0.5},
+        {'text': '  Arithmetic, relational, assignment ', 'score': 2.0},
+
+      ],
+    },
+    {
+      'questionText': ' Q62. Which of the following is a keyword is used for a storage class',
+      'answers': [
+        {'text': ' printf', 'score': -0.5},
+        {'text': ' external', 'score': -0.5},
+        {'text': ' auto', 'score': 2.0},
+        {'text': ' scanf', 'score': -0.5},
+
+      ],
+    },
+    {
+      'questionText': ' Q63. In the C language ‘a’ represents',
+      'answers': [
+        {'text': ' a digit', 'score': -0.5},
+        {'text': ' an integer', 'score': -0.5},
+        {'text': ' a character', 'score': 2.0},
+        {'text': ' a word', 'score': -0.5},
+
+      ],
+    },
+    {
+      'questionText': ' Q64. The number of relational operators in the C language is ',
+      'answers': [
+        {'text': ' Four', 'score': -0.5},
+        {'text': ' Six', 'score': 2.0},
+        {'text': ' Three', 'score': -0.5},
+        {'text': ' One', 'score': -0.5},
+
+      ],
+    },
+    {
+      'questionText': ' Q65. A compound statement is a group of statements included between a pair of',
+      'answers': [
+        {'text': ' double quote', 'score': 2.0},
+        {'text': ' curly braces', 'score': -0.5},
+        {'text': ' parenthesis', 'score': -0.5},
+        {'text': ' a pair of /’s', 'score': -0.5},
+
+      ],
+    },
+    {
+      'questionText': ' Q66. What is the control character for “a floating point number”. ',
+      'answers': [
+        {'text': '  %c', 'score': -0.5},
+        {'text': '  %d', 'score': -0.5},
+        {'text': ' %i', 'score': -0.5},
+        {'text': ' %f', 'score': 2.0},
 
       ],
     },
 
     {
-      'questionText': 'Q 4. Combining data and method together is called ',
+      'questionText': ' Q67. A Link is ',
       'answers': [
-        {'text': 'Encapsulation', 'score': 2.0},
-        {'text': 'Classification', 'score': -0.5},
-        {'text': 'Data hiding', 'score': -0.5},
-        {'text': 'None ', 'score': -0.5},
+        {'text': ' a compiler', 'score': -0.5},
+        {'text': ' an active debugger', 'score': -0.5},
+        {'text': ' a C interpreter', 'score': -0.5},
+        {'text': ' an analyzing tool in C', 'score': 2.0},
 
       ],
     },
-
     {
-      'questionText': 'Q 5. Which of the following allows fixed length of strings? ',
+      'questionText': ' Q68. The continue command cannot be used with',
       'answers': [
-        {'text': 'Final', 'score': -0.5},
-        {'text': 'String','score': 2.0},
-        {'text': 'StringBuffer', 'score': -0.5},
-        {'text': 'None ', 'score': -0.5},
+        {'text': ' for', 'score': 2.0},
+        {'text': ' switch', 'score': -0.5},
+        {'text': ' do', 'score': -0.5},
+        {'text': ' while', 'score': -0.5},
+
+      ],
+    },
+    {
+      'questionText': ' Q69. In C, a Union is ',
+      'answers': [
+        {'text': ' memory location', 'score': -0.5},
+        {'text': ' memory store', 'score': 2.0},
+        {'text': ' memory screen', 'score': -0.5},
+        {'text': ' None of these', 'score': -0.5},
+
+      ],
+    },
+    {
+      'questionText': ' Q70. When the main function is called, it is called with the arguments ',
+      'answers': [
+        {'text': ' argc', 'score': -0.5},
+        {'text': ' argv', 'score': -0.5},
+        {'text': ' None of these', 'score': -0.5},
+        {'text': ' both a & b', 'score': 2.0},
+
+      ],
+    },
+    {
+      'questionText': ' Q71. A multidimensional array can be expressed in terms of  ',
+      'answers': [
+        {'text': '  array of pointers rather than as pointers to a group of a contiguous array ', 'score': 2.0},
+        {'text': '  array without the group of a contiguous array ', 'score': -0.5},
+        {'text': '  data type arrays ', 'score': -0.5},
+        {'text': '  None of these ', 'score': -0.5},
+
+      ],
+    },
+    {
+      'questionText': ' Q72. C allows arrays of greater than two dimensions, who will determine this ',
+      'answers': [
+        {'text': '  programmer ', 'score': -0.5},
+        {'text': '  compiler ', 'score': 2.0},
+        {'text': '  parameter ', 'score': -0.5},
+        {'text': '  None of these ', 'score': -0.5},
+
+      ],
+    },
+    {
+      'questionText': ' Q73. If the size of the array is less than the number of initializers then, ',
+      'answers': [
+        {'text': '  Extra values are being ignored ', 'score': 2.0},
+        {'text': '  Generates an error message ', 'score': -0.5},
+        {'text': '  Size of Array is increased ', 'score': -0.5},
+        {'text': '  Size is neglected when values are given ', 'score': -0.5},
+
+      ],
+    },
+    {
+      'questionText': ' Q74. A Structure ',
+      'answers': [
+        {'text': '  can be read as a single entity ', 'score': -0.5},
+        {'text': '  cannot be read as a single entity ', 'score': 2.0},
+        {'text': '  can be displayed as a single entity ', 'score': -0.5},
+        {'text': '  has member variables that cannot be read individually ', 'score': -0.5},
+
+      ],
+    },
+    {
+      'questionText': ' Q75. The _______ is used to break out of the case statements. ',
+      'answers': [
+        {'text': '  continue ', 'score': -0.5},
+        {'text': '  break ', 'score': 2.0},
+        {'text': '  default ', 'score': -0.5},
+        {'text': '  case ', 'score': -0.5},
 
       ],
     },
 
 
 
-//    {
-//      'questionText': ' Q1. Which of the following language is the predecessor to C Programming Language?',
-//      'answers': [
-//        {'text': ' A', 'score': -0.5},
-//        {'text': ' B', 'score': -0.5},
-//        {'text': ' BCPL', 'score': 2},
-//        {'text': ' C++', 'score': -0.5},
-//
-//      ],
-//    },
-//    {
-//      'questionText': ' Q2. C programming language was developed by',
-//      'answers': [
-//        {'text': ' Dennis Ritchie', 'score': 2},
-//        {'text': ' Ken Thompson', 'score': -0.5},
-//        {'text': ' Bill Gates', 'score': -0.5},
-//        {'text': ' Peter Norton', 'score': -0.5},
-//
-//      ],
-//    },
-//
-////    {
-////      'questionText': 'Q2.  How many instances of a class can be declared?',
-////      'answers': [
-////        {'text': '1', 'score': -2},
-////        {'text': '10', 'score': -2},
-////        {'text': 'None of the these', 'score': -2},
-////        {'text': 'As per required', 'score': 10},
-////
-////      ],
-////    },
-//
-//    {
-//      'questionText':
-//      'Q5. What kinds of iterators can be used with vectors?',
-//      'answers': [
-//        {'text': 'Forward iterator', 'score': -2},
-//        {'text': 'Bi-directional iterator', 'score': -2},
-//        {'text': 'Random access iterator', 'score': -2},
-//        {'text': 'All of the above', 'score': 10},
-//      ],
-//    },
-//    {
-//      'questionText': ' Q4. C is a ___ language',
-//      'answers': [
-//        {'text': ' High Level', 'score': -0.5},
-//        {'text': ' Low Level', 'score': -0.5},
-//        {'text': ' Middle Level', 'score': 2},
-//        {'text': ' Machine Level', 'score': -0.5},
-//
-//      ],
-//    },
-//    {
-//      'questionText': ' Q5. C language is available for which of the following Operating Systems?',
-//      'answers': [
-//        {'text': ' DOS', 'score': -0.5},
-//        {'text': ' Windows', 'score': -0.5},
-//        {'text': ' Unix', 'score': -0.5},
-//        {'text': ' All of these', 'score':2},
-//
-//      ],
-//    },
   ];
 
 

@@ -44,6 +44,7 @@ class First_cem extends StatelessWidget {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => Sub1()));
                 },
+                //child:Image.asset("images/c_prog.jpg",fit: BoxFit.cover),
                 child:Image.asset("images/c_prog.jpg",fit: BoxFit.cover),
               ),
             ),
@@ -69,11 +70,11 @@ class First_cem extends StatelessWidget {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => MainPage_IntroAlg()));
                 },
-                child:Image.asset("images/intr_alg.jpg",fit: BoxFit.cover,),
+                //child:Image.asset("images/intr_alg.jpg",fit: BoxFit.cover,),
+                child:Image.asset("images/nalgo.png",fit: BoxFit.cover,),
               ),
             ),
             //child:Image.asset("images/i_alg.jpg"),
-
 
           ],
         ),

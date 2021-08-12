@@ -13,10 +13,14 @@ class FirstPage_Com extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:Colors.lightBlueAccent[700] ,
-      appBar: AppBar(
-        backgroundColor: Colors.blue[800],
-        title: Text("Communication Engineering"),
+      backgroundColor:Colors.black ,
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(40.0),
+        child: AppBar(
+          backgroundColor: Colors.cyan,
+          title: Text('Communication Engineering'),
+          centerTitle: false,
+        ),
       ),
       //backgroundColor: Colors.cyanAccent,
       body: Padding(

@@ -10,9 +10,14 @@ class FirstPage_AdAlg extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:Colors.cyanAccent[400] ,
-      appBar: AppBar(
-        title: Text("Advance Algorithm"),
+      backgroundColor:Colors.cyan[200] ,
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(40.0),
+        child: AppBar(
+          backgroundColor: Colors.cyan[600],
+          title: Text('Advance Algorithm'),
+          centerTitle: false,
+        ),
       ),
       //backgroundColor: Colors.cyanAccent,
       body: Padding(

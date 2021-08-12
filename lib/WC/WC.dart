@@ -1,12 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:ruf/Abbreviation/Viva/viva_1st.dart';
+import 'package:ruf/Abbreviation/abbreviation_1st.dart';
 import 'package:ruf/Cources/cources.dart';
-import 'package:ruf/RufMain/rufmain.dart';
+import 'package:ruf/Syllabous/syllabous.dart';
+import 'package:ruf/Website/website.dart';
 import 'package:ruf/quiz_main.dart';
-// import 'package:sidebaranimationflutter/Cources/cources.dart';
-// import 'package:sidebaranimationflutter/RufMain/rufmain.dart';
-// import 'package:sidebaranimationflutter/quiz_main.dart';
-
 
 void main() => runApp(SliversPage());
 
@@ -19,11 +18,21 @@ class _SliversPageState extends State<SliversPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.cyan[50],
+      appBar: PreferredSize(
+
+        preferredSize: Size.fromHeight(40.0),
+        child: AppBar(
+          backgroundColor: Colors.cyan[700],
+          title: Text('GB CSE Department'),
+          centerTitle: true,
+        ),
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: [
             SizedBox(
-              height: 25,
+              height: 15,
             ),
 
 
@@ -37,20 +46,52 @@ class _SliversPageState extends State<SliversPage> {
                 crossAxisCount: 2,
                 children: <Widget>[
                   Container(
-                    color: Colors.black,
+
+                    decoration: BoxDecoration(
+                      color: Colors.teal[300],
+                      borderRadius: BorderRadius.circular(
+                          15), //border corner radius
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey
+                              .withOpacity(0.2), //color of shadow
+                          spreadRadius: 5, //spread radius
+                          blurRadius: 7, // blur radius
+                          offset: Offset(
+                              0, 2), // changes position of shadow
+                        ),
+                      ],
+                    ),
+
+                    //color: Colors.teal[300],
                     child: InkWell(
                       onTap: () {
                         Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Ruf()));
+                            MaterialPageRoute(builder: (context) => Syllabous ()));
                       },
                       child: Align(
                         alignment: Alignment.center,
-                          child: Text("Departmental Syllabous", style: TextStyle(color: Colors.white,fontSize: 22,fontWeight: FontWeight.bold,),textAlign: TextAlign.center,)),
+                          child: Text("Departmental Syllabus", style: TextStyle(color: Colors.black,fontSize: 22,fontWeight: FontWeight.bold,),textAlign: TextAlign.center,)),
                     ),
                   ),
 
                   Container(
-                    color: Colors.black,
+                    decoration: BoxDecoration(
+                      color: Colors.cyan[700],
+                      borderRadius: BorderRadius.circular(
+                          15), //border corner radius
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey
+                              .withOpacity(0.2), //color of shadow
+                          spreadRadius: 5, //spread radius
+                          blurRadius: 7, // blur radius
+                          offset: Offset(
+                              0, 2), // changes position of shadow
+                        ),
+                      ],
+                    ),
+                    //color: Colors.cyan[700],
                     child: InkWell(
                       onTap: () {
                         Navigator.push(context,
@@ -63,7 +104,22 @@ class _SliversPageState extends State<SliversPage> {
                   ),
 
                   Container(
-                    color: Colors.black,
+                    decoration: BoxDecoration(
+                      color: Colors.cyan[700],
+                      borderRadius: BorderRadius.circular(
+                          15), //border corner radius
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey
+                              .withOpacity(0.2), //color of shadow
+                          spreadRadius: 5, //spread radius
+                          blurRadius: 7, // blur radius
+                          offset: Offset(
+                              0, 2), // changes position of shadow
+                        ),
+                      ],
+                    ),
+                    //color: Colors.cyan[700],
                     child: InkWell(
                       onTap: () {
                         Navigator.push(context,
@@ -79,41 +135,86 @@ class _SliversPageState extends State<SliversPage> {
                   ),
 
                   Container(
-                    color: Colors.black,
+                    decoration: BoxDecoration(
+                      color: Colors.teal[300],
+                      borderRadius: BorderRadius.circular(
+                          15), //border corner radius
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey
+                              .withOpacity(0.2), //color of shadow
+                          spreadRadius: 5, //spread radius
+                          blurRadius: 7, // blur radius
+                          offset: Offset(
+                              0, 2), // changes position of shadow
+                        ),
+                      ],
+                    ),
+                    //color: Colors.teal[300],
                     child: InkWell(
                       onTap: () {
                         Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Ruf()));
+                            MaterialPageRoute(builder: (context) => Viva()));
                       },
                       child: Align(
                           alignment: Alignment.center,
-                          child: Text("VIVA", style: TextStyle(color: Colors.white,fontSize: 22,fontWeight: FontWeight.bold,),textAlign: TextAlign.center,)),
+                          child: Text("VIVA", style: TextStyle(color: Colors.black,fontSize: 22,fontWeight: FontWeight.bold,),textAlign: TextAlign.center,)),
                     ),
                   ),
 
                   Container(
-                    color: Colors.black,
+                    decoration: BoxDecoration(
+                      color: Colors.teal[300],
+                      borderRadius: BorderRadius.circular(
+                          15), //border corner radius
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey
+                              .withOpacity(0.2), //color of shadow
+                          spreadRadius: 5, //spread radius
+                          blurRadius: 7, // blur radius
+                          offset: Offset(
+                              0, 2), // changes position of shadow
+                        ),
+                      ],
+                    ),
+                    //color: Colors.teal[300],
                     child: InkWell(
                       onTap: () {
                         Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Ruf()));
+                            MaterialPageRoute(builder: (context) => Abbreviation()));
                       },
                       child: Align(
                           alignment: Alignment.center,
-                          child: Text("Abbreviation", style: TextStyle(color: Colors.white,fontSize: 22,fontWeight: FontWeight.bold,),textAlign: TextAlign.center,)),
+                          child: Text("Abbreviation", style: TextStyle(color: Colors.black,fontSize: 22,fontWeight: FontWeight.bold,),textAlign: TextAlign.center,)),
                     ),
                   ),
 
                   Container(
-                    color: Colors.black,
+                    decoration: BoxDecoration(
+                      color: Colors.cyan[700],
+                      borderRadius: BorderRadius.circular(
+                          15), //border corner radius
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey
+                              .withOpacity(0.2), //color of shadow
+                          spreadRadius: 5, //spread radius
+                          blurRadius: 7, // blur radius
+                          offset: Offset(
+                              0, 2), // changes position of shadow
+                        ),
+                      ],
+                    ),
+                    //color: Colors.cyan[700],
                     child: InkWell(
                       onTap: () {
                         Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Ruf()));
+                            MaterialPageRoute(builder: (context) => Website()));
                       },
                       child: Align(
                           alignment: Alignment.center,
-                          child: Text("Saving XM Times", style: TextStyle(color: Colors.white,fontSize: 22,fontWeight: FontWeight.bold,),textAlign: TextAlign.center,)),
+                          child: Text("Go To Website", style: TextStyle(color: Colors.white,fontSize: 22,fontWeight: FontWeight.bold,),textAlign: TextAlign.center,)),
                     ),
                   ),
 

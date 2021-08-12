@@ -61,7 +61,7 @@ class Fifth_cem extends StatelessWidget {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => MainPage_DBMS()));
                 },
-                child: Image.asset("images/dbms.jpg",fit: BoxFit.cover),
+                child: Image.asset("images/ndbms.jpg",fit: BoxFit.cover),
               ),
             ),
 
@@ -74,7 +74,7 @@ class Fifth_cem extends StatelessWidget {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => MainPage_Micro()));
                 },
-                child:Image.asset("images/micro.jpg",fit: BoxFit.cover,),
+                child:Image.asset("images/nmicro.jpg",fit: BoxFit.cover,),
               ),
             ),
             Card(
@@ -84,7 +84,7 @@ class Fifth_cem extends StatelessWidget {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => MainPage_Com()));
                 },
-                child:Image.asset("images/ce.jpg",fit: BoxFit.cover,),
+                child:Image.asset("images/ncom.jpg",fit: BoxFit.cover,),
               ),
             ),
             //child:Image.asset("images/i_alg.jpg"),

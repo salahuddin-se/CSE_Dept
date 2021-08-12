@@ -45,7 +45,7 @@ class Seven_Semester extends StatelessWidget {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => MainPage_Soft()));
                 },
-                child:Image.asset("images/swe.jpg",fit: BoxFit.cover),
+                child:Image.asset("images/nse.jpg",fit: BoxFit.cover),
               ),
             ),
 
@@ -56,7 +56,8 @@ class Seven_Semester extends StatelessWidget {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => MainPage_Net()));
                 },
-                child:Image.asset("images/net.jpg",fit: BoxFit.cover),
+                //child:Image.asset("images/net.jpg",fit: BoxFit.cover),
+                child:Image.asset("images/ncn.jpg",fit: BoxFit.cover),
               ),
             ),
 
@@ -67,7 +68,7 @@ class Seven_Semester extends StatelessWidget {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => MainPage_DSP()));
                 },
-                child:Image.asset("images/dss.jpg",fit: BoxFit.cover),
+                child:Image.asset("images/ndsp.jpg",fit: BoxFit.cover),
               ),
             ),
 
@@ -78,7 +79,7 @@ class Seven_Semester extends StatelessWidget {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => MainPage_Simul()));
                 },
-                child:Image.asset("images/sm.jpg",fit: BoxFit.cover),
+                child:Image.asset("images/nsm.jpg",fit: BoxFit.cover),
               ),
             ),
 

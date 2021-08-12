@@ -13,10 +13,18 @@ class FirstPage_Simul extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:Colors.lightBlueAccent[700] ,
-      appBar: AppBar(
-        backgroundColor: Colors.blue[800],
-        title: Text("Simulation and modeling"),
+      backgroundColor:Colors.lightBlue[200] ,
+      // appBar: AppBar(
+      //   backgroundColor: Colors.blue[800],
+      //   title: Text("Simulation and modeling"),
+      // ),
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(40.0),
+        child: AppBar(
+          backgroundColor: Colors.cyan,
+          title: Text('Simulation and modeling'),
+          centerTitle: false,
+        ),
       ),
       //backgroundColor: Colors.cyanAccent,
       body: Padding(
@@ -33,7 +41,7 @@ class FirstPage_Simul extends StatelessWidget {
             child: SingleChildScrollView(
               child: new Text(name, textAlign: TextAlign.justify,
 
-                style: TextStyle(fontSize: 20.0, color: Colors.white,
+                style: TextStyle(fontSize: 20.0, color: Colors.black,
 
                   fontWeight: FontWeight.bold,
                 ),

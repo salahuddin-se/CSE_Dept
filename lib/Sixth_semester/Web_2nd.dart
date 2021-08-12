@@ -14,9 +14,17 @@ class FirstPage_WebEng extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor:Colors.lightBlueAccent[700] ,
-      appBar: AppBar(
-        backgroundColor: Colors.blue[800],
-        title: Text("Web Engineering"),
+      // appBar: AppBar(
+      //   backgroundColor: Colors.blue[800],
+      //   title: Text("Web Engineering"),
+      // ),
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(40.0),
+        child: AppBar(
+          backgroundColor: Colors.lightBlue[300],
+          title: Text('Web Engineering'),
+          centerTitle: false,
+        ),
       ),
       //backgroundColor: Colors.cyanAccent,
       body: Padding(

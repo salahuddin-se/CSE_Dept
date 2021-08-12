@@ -32,22 +32,35 @@ class Third_Semester extends StatelessWidget {
           crossAxisCount: 2,
           children: <Widget>[
 
-            Column(
-              children: [
-                Card(
-                  color: Colors.white,
-                  child: InkWell(
-                    onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Data_Structure()));
-                    },
-                    child:Image.asset("images/data_str.jpg",fit: BoxFit.cover),
-                  ),
-                ),
 
-                Text("Data Structure")
-              ],
+            Card(
+              color: Colors.white,
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Data_Structure()));
+                },
+                child:Image.asset("images/data_str.jpg",fit: BoxFit.cover),
+              ),
             ),
+
+
+            // Column(
+            //   children: [
+            //     Card(
+            //       color: Colors.white,
+            //       child: InkWell(
+            //         onTap: () {
+            //           Navigator.push(context,
+            //               MaterialPageRoute(builder: (context) => Data_Structure()));
+            //         },
+            //         child:Image.asset("images/data_str.jpg",fit: BoxFit.cover),
+            //       ),
+            //     ),
+            //
+            //     Text("Data Structure")
+            //   ],
+            // ),
 
 
           ],

@@ -14,9 +14,17 @@ class Java extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.blue[400],
-        title: Text("Java Programming",style: TextStyle(color: Colors.white),),
+      // appBar: AppBar(
+      //   backgroundColor: Colors.blue[400],
+      //   title: Text("Java Programming",style: TextStyle(color: Colors.white),),
+      // ),
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(40.0),
+        child: AppBar(
+          backgroundColor: Colors.blue[400],
+          title: Text('Java Programming'),
+          centerTitle: false,
+        ),
       ),
       body:Padding(
         padding: const EdgeInsets.all(10.0),

@@ -19,9 +19,17 @@ class MainPage_WebEng extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.teal,
-        title: Text("Web Engineering",style: TextStyle(color: Colors.white),),
+      // appBar: AppBar(
+      //   backgroundColor: Colors.teal,
+      //   title: Text("Web Engineering",style: TextStyle(color: Colors.white),),
+      // ),
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(40.0),
+        child: AppBar(
+          backgroundColor: Colors.lightBlue[300],
+          title: Text('Web Engineering'),
+          centerTitle: false,
+        ),
       ),
       body:Padding(
         padding: const EdgeInsets.all(10.0),

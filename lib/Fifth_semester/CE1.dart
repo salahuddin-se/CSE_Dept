@@ -19,9 +19,17 @@ class MainPage_Com extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.teal,
-        title: Text("Communication Engineering",style: TextStyle(color: Colors.white),),
+      // appBar: AppBar(
+      //   backgroundColor: Colors.teal,
+      //   title: Text("Communication Engineering",style: TextStyle(color: Colors.white),),
+      // ),
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(40.0),
+        child: AppBar(
+          backgroundColor: Colors.cyan,
+          title: Text('Communication Engineering'),
+          centerTitle: false,
+        ),
       ),
       body:Padding(
         padding: const EdgeInsets.all(10.0),
@@ -31,7 +39,7 @@ class MainPage_Com extends StatelessWidget {
             decoration: BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter, colors: [Colors.tealAccent,Colors.yellow,Colors.cyan,],
+                  end: Alignment.bottomCenter, colors: [Colors.tealAccent,Colors.white,Colors.cyan,],
                   //colors: [  Colors.indigoAccent,Colors.lightGreenAccent, Colors.cyanAccent,],
                   //colors: [ Colors.lightBlue[100],Colors.blueAccent[100],Colors.purple[50],  ],
                   //colors: [Colors.redAccent, Colors.cyan],

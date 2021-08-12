@@ -19,7 +19,7 @@ class Second_cem extends StatelessWidget {
       backgroundColor:Colors.cyan[50] ,
       appBar: AppBar(
         title: Text("Second Semester's Course",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold),),
-        backgroundColor: Colors.blueGrey[300],
+        backgroundColor: Colors.blue[300],
       ),
       body: Padding(
         padding: const EdgeInsets.all(30.0),
@@ -39,7 +39,7 @@ class Second_cem extends StatelessWidget {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => Cpp()));
                 },
-                child:Image.asset("images/cpp.jpg",fit: BoxFit.cover),
+                child:Image.asset("images/ncpp.png",fit: BoxFit.cover),
               ),
             ),
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ruf/Sixth_semester/Peri1.dart';
 import 'package:ruf/Sixth_semester/Web_1st.dart';
 
 import 'Archi1st.dart';
@@ -43,7 +44,7 @@ class Six_Semester extends StatelessWidget {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => MainPage_Operating()));
                 },
-                child:Image.asset("images/os.jpg",fit: BoxFit.cover),
+                child:Image.asset("images/nop.png",fit: BoxFit.cover),
               ),
             ),Card(
               color: Colors.white,
@@ -52,9 +53,10 @@ class Six_Semester extends StatelessWidget {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => MainPage_WebEng()));
                 },
-                child:Image.asset("images/web.jpg",fit: BoxFit.cover),
+                child:Image.asset("images/nnweb.jpg",fit: BoxFit.cover),
               ),
             ),
+
             Card(
               color: Colors.white,
               child: InkWell(
@@ -62,10 +64,20 @@ class Six_Semester extends StatelessWidget {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => MainPage_Archi()));
                 },
-                child:Image.asset("images/archi.jpg",fit: BoxFit.cover),
+                child:Image.asset("images/nca.jpg",fit: BoxFit.cover),
               ),
             ),
 
+            Card(
+              color: Colors.white,
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => MainPage_Peri()));
+                },
+                child:Image.asset("images/nperi.jpg",fit: BoxFit.cover),
+              ),
+            ),
 
           ],
         ),

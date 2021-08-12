@@ -33,7 +33,7 @@ class MainPage_Operating extends StatelessWidget {
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
                   //colors: [  Colors.indigoAccent,Colors.lightGreenAccent, Colors.cyanAccent,],
-                  colors: [ Colors.lightBlue[100],Colors.blueAccent[100],Colors.purple[50],  ],
+                  colors: [ Colors.lightBlue[100],Colors.blueAccent[100],Colors.white,  ],
                   //colors: [Colors.redAccent, Colors.cyan],
                 )
             ),

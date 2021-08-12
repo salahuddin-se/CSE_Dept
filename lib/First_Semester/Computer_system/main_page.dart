@@ -18,9 +18,17 @@ class ComSystem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.cyan,
-        title: Text("Introduction to computer system"),
+      // appBar: AppBar(
+      //   backgroundColor: Colors.cyan,
+      //   title: Text("Introduction to computer system"),
+      // ),
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(40.0),
+        child: AppBar(
+          backgroundColor: Colors.cyan,
+          title: Text('Introduction to computer system'),
+          centerTitle: false,
+        ),
       ),
       body:Padding(
         padding: const EdgeInsets.all(10.0),

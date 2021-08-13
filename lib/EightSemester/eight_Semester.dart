@@ -57,28 +57,7 @@ class Eight_Semester extends StatelessWidget {
                 child:Image.asset("images/ndm.png",fit: BoxFit.cover),
               ),
             ),
-            //
-            // Card(
-            //   color: Colors.white,
-            //   child: InkWell(
-            //     onTap: () {
-            //       Navigator.push(context,
-            //           MaterialPageRoute(builder: (context) => MainPage_DSP()));
-            //     },
-            //     child:Image.asset("images/dss.jpg",fit: BoxFit.cover),
-            //   ),
-            // ),
-            //
-            // Card(
-            //   color: Colors.white,
-            //   child: InkWell(
-            //     onTap: () {
-            //       Navigator.push(context,
-            //           MaterialPageRoute(builder: (context) => MainPage_Simul()));
-            //     },
-            //     child:Image.asset("images/sm.jpg",fit: BoxFit.cover),
-            //   ),
-            // ),
+
 
 
           ],
